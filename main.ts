@@ -434,9 +434,10 @@ export function incubation(time: humidity_times): void {
 
     if (t>=thetime){
         t2=t1;
-        pins.D9.digitalWrite(false);
         start=control.millis();
         while (totalmillis<=60000){
+            String(" FILLING THANK",40,2,1)
+            pins.D9.digitalWrite(false);
             let _temperature=leersensor();
             themillis=control.millis()-start;
             totalmillis=themillis+totalmillis;
