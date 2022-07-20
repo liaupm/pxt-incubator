@@ -396,6 +396,8 @@ export function Start_incubator(value: the_temp): void {
 //% weight=90 color=#AA278D
 export function incubation(time: humidity_times): void {
  
+ String(" INCUBATING",40,2,1); //meter un espacio antes de la "S"
+ 
     timeselection(time); 
     // See if temperature increases or decreases
     // increase>0 --> Increasing temperature
